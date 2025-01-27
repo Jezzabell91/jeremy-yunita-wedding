@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { MapPin, Car } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 // TypeScript declarations for Google Maps
 declare global {
@@ -91,7 +91,7 @@ export const LocationSection = () => {
             <h4 className="text-lg font-serif text-gray-700 text-center mb-4">
               Ceremony & After Party
             </h4>
-            <p className="text-center text-gray-600">Mum's Farm House</p>
+            <p className="text-center text-gray-600">Mum&apos;s Farm House</p>
             <p className="text-center text-gray-600">
               5876 Toowoomba Karara Rd
             </p>
@@ -111,7 +111,6 @@ export const LocationSection = () => {
           {/* Drive Times Section */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center justify-center mb-4">
-              {/* <Car className="w-6 h-6 text-pink-400 mr-2" /> */}
               <h4 className="text-lg font-serif text-gray-700">Drive Times</h4>
             </div>
             <div className="space-y-4">

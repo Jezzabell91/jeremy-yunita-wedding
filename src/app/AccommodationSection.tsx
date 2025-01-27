@@ -1,5 +1,5 @@
 import React from "react";
-import { Tent, MapPin } from "lucide-react";
+import { Tent } from "lucide-react";
 
 const AccommodationSection = () => {
   return (
@@ -29,7 +29,7 @@ const AccommodationSection = () => {
               Alternative Accommodation
             </h3>
             <p className="text-gray-600">
-              If you're unable to camp, we recommend:
+              If you are unable to camp, we recommend:
             </p>
             <div className="mt-4 space-y-3">
               <p className="text-gray-600">
