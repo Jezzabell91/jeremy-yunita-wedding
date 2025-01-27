@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jeremy & Yunita's Wedding Website
+
+A Next.js-based wedding website created to share details about Jeremy and Yunita's wedding celebration on May 5th, 2025. The website provides essential information for guests, including ceremony details, accommodations, and an RSVP system.
+
+## Features
+
+- Responsive design that works on both mobile and desktop devices
+- Interactive photo carousel showcasing the couple's journey
+- Dynamic countdown to the wedding day
+- Google Maps integration for venue locations
+- Detailed information about:
+  - Ceremony and reception venues
+  - Accommodation options (including camping details)
+  - RSVP instructions
+  - Wishing well information
+  - Frequently asked questions
+- Image gallery with touch support for mobile devices
+
+## Tech Stack
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- Lucide Icons
+- Google Maps API
+- React Hooks
+- Responsive Images with Next/Image
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The project follows a component-based architecture with the following key files:
 
-## Learn More
+- `page.tsx` - Main page component
+- `HeroSection.tsx` - Landing page hero section
+- `CeremonyDetails.tsx` - Wedding ceremony information
+- `LocationSection.tsx` - Venue locations and maps
+- `AccommodationSection.tsx` - Accommodation details
+- `PhotoCarousel.tsx` - Photo gallery component
+- `FAQ.tsx` - Frequently asked questions
+- `RSVPSection.tsx` - RSVP information
 
-To learn more about Next.js, take a look at the following resources:
+## Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The following environment variables are required:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
+```
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The site can be deployed using the [Vercel Platform](https://vercel.com/new). Simply:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Push your code to a GitHub repository
+2. Import the project to Vercel
+3. Add required environment variables
+4. Deploy
+
+## Local Development
+
+To add new photos to the gallery:
+
+1. Add images to the `/public/images` directory
+2. Update the `galleryItems` array in `Gallery.tsx`
+3. Images should be in webp or jpg format for optimal performance
+
+## License
+
+This project is private and not licensed for public use.
