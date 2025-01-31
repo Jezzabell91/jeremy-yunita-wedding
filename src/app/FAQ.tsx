@@ -41,9 +41,7 @@ const FAQ = () => {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center mb-6">
             <HelpCircle className="w-8 h-8 text-pink-400 mr-4" />
-            <h2 className="text-3xl font-serif text-gray-800">
-              Frequently Asked Questions
-            </h2>
+            <h2 className="text-3xl font-serif text-gray-800">FAQ</h2>
           </div>
         </div>
 
