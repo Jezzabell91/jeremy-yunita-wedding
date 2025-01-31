@@ -23,11 +23,11 @@ const FAQ = () => {
       answer:
         "Yes, a block of showers and toilets will be provided onsite for all camping guests.",
     },
-    {
-      question: "Will there be cute highland cows?",
-      answer:
-        "Yes! You'll likely have an opportunity to see several highland cows at the house.",
-    },
+    // {
+    //   question: "Will there be cute highland cows?",
+    //   answer:
+    //     "Yes! You'll likely have an opportunity to see several highland cows at the house.",
+    // },
     {
       question: "How is the weather in Leyburn at that time of year?",
       answer:
