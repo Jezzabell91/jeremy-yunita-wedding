@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Heart } from "lucide-react";
 
 const HeroOverlay = () => {
-  const [daysUntil, setDaysUntil] = useState<number>(0);
+  // Set initial state to null to indicate loading state
+  const [daysUntil, setDaysUntil] = useState<number | null>(null);
 
   useEffect(() => {
     const calculateDaysUntil = () => {
@@ -28,6 +29,22 @@ const HeroOverlay = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Function to render the days text
+  const getDaysText = () => {
+    // Return empty string during initial loading
+    if (daysUntil === null) {
+      return "";
+    }
+    
+    if (daysUntil > 0) {
+      return `Are getting married in ${daysUntil} ${daysUntil === 1 ? "day" : "days"}`;
+    } else if (daysUntil === 0) { 
+      return "Are getting married today!!!";
+    } else {
+      return "Got married on";
+    }
+  };
+
   return (
     <div className="absolute inset-0 bg-black bg-opacity-30 flex items-start sm:items-center justify-center">
       <div className="text-center text-white p-8 bg-black bg-opacity-20 rounded-lg backdrop-blur-sm border border-white border-opacity-20 mt-[20vh] sm:mt-0">
@@ -37,9 +54,11 @@ const HeroOverlay = () => {
         <h1 className="text-4xl sm:text-6xl font-serif mb-6">
           Jeremy & Yunita
         </h1>
-        <p className="text-xl sm:text-2xl font-light mb-6">
-          Are getting married in {daysUntil} {daysUntil === 1 ? "day" : "days"}!
-        </p>
+        {daysUntil !== null && (
+          <p className="text-xl sm:text-2xl font-light mb-6">
+            {getDaysText()}
+          </p>
+        )}
         <p className="text-xl; sm:text-2xl mb-6 font-light">
           Monday, 5th May 2025
         </p>
