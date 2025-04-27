@@ -23,37 +23,6 @@ const AccommodationSection = () => {
               facilities provided.
             </p>
           </div>
-
-          <div className="pt-6">
-            <h3 className="text-xl font-serif text-gray-700 mb-3">
-              Alternative Accommodation
-            </h3>
-            <p className="text-gray-600">
-              If you are unable to camp, we recommend:
-            </p>
-            <div className="mt-4 space-y-3">
-              <p className="text-gray-600">
-                <a
-                  href="https://maps.google.com/?q=Karara+Tavern+and+Motel"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-pink-500 underline"
-                >
-                  Karara Tavern and Motel (15 minute drive)
-                </a>
-              </p>
-              <p className="text-gray-600">
-                <a
-                  href="https://maps.google.com/?q=Bull+and+Barley+Inn+Cambooya"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-pink-500 underline"
-                >
-                  Bull & Barley Inn in Cambooya (30 minute drive)
-                </a>
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
