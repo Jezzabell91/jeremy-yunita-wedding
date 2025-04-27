@@ -1,5 +1,6 @@
 import React from "react";
 import { Gift } from "lucide-react";
+import Link from "next/link";
 
 export const WishingWellDetails = () => {
   return (
@@ -13,11 +14,18 @@ export const WishingWellDetails = () => {
           <p className="text-center text-gray-600 mb-4">
             Your presence at our wedding is the greatest gift of all.
           </p>
-          <p className="text-center text-gray-600">
-            However, we also like money and presents, so if you wish to
-            celebrate our union with a gift, we will have a wishing well and
-            gift table.
+          <p className="text-center text-gray-600 mb-6">
+            However, we also like money, so if you wish to
+            celebrate our union with a financial gift, we will have a wishing well. 
           </p>
+          <div className="text-center mt-6">
+            <Link 
+              href="/wishing-well" 
+              className="bg-pink-400 hover:bg-pink-500 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-300"
+            >
+              Digital Wishing Well Details
+            </Link>
+          </div>
         </div>
       </div>
     </div>
